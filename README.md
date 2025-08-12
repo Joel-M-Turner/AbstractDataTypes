@@ -1,5 +1,46 @@
 # Abstract Data Types
 Interface and Implemtation of Several Useful ADTs in c
+
+- [Abstract Data Types](#abstract-data-types)
+  * [Stack](#stack)
+    + [Overview](#overview)
+    + [How to implement a stack?](#how-to-implement-a-stack-)
+  * [Queue](#queue)
+    + [Overview](#overview-1)
+    + [How to implement a queue?](#how-to-implement-a-queue-)
+  * [Binary Search Tree](#binary-search-tree)
+  * [Graph](#graph)
+    + [Overview](#overview-2)
+    + [Terminology](#terminology)
+      - [Graph Terminology](#graph-terminology)
+      - [Vertex Terminology:](#vertex-terminology-)
+      - [Sparsity:](#sparsity-)
+      - [Paths](#paths)
+    + [Graph Properties](#graph-properties)
+    + [Implementation](#implementation)
+    + [Traversal](#traversal)
+      - [Breadth-First-Search (BFS)](#breadth-first-search--bfs-)
+        * [Pseudocode:](#pseudocode-)
+        * [Analysis](#analysis)
+      - [BFS Path Finding](#bfs-path-finding)
+        * [Pseudocode](#pseudocode)
+      - [Depth-First-Search](#depth-first-search)
+        * [Pseudocode - Iterative Implementation](#pseudocode---iterative-implementation)
+        * [Pseudocode - Recursive Implementation](#pseudocode---recursive-implementation)
+        * [Analysis](#analysis-1)
+      - [DFS Path Checking](#dfs-path-checking)
+        * [Pseudocode](#pseudocode-1)
+      - [DFS Path Finding](#dfs-path-finding)
+        * [PseudoCode](#pseudocode)
+  * [Hash](#hash)
+  * [Priority Queue](#priority-queue)
+    + [Overview](#overview-3)
+    + [Worst-Case Time Complexities using different implementations](#worst-case-time-complexities-using-different-implementations)
+  * [Heap](#heap)
+    + [Overview](#overview-4)
+    + [Binary Heaps](#binary-heaps)
+    + [Implementation Details](#implementation-details)
+
 ## Stack
 ### Overview
 A stack is a collection of items such that that last item to enter is the first to leave (LIFO - Last in First Out). Some examples of this are:
@@ -93,13 +134,6 @@ There are three common implementation methods of a Graph ADT:
 - **Adjacency Matrix**: Two-dimensional array of bools or ints indicating the presence of, and weight of adjacent nodes of each node.
 - **Adjacency List**: Array of linked lists containing the adjacent nodes of each node
 - **Array of Adjacent Pairs**: Array, where every entry contains two nodes (and a weight) indicating the edge between these nodes.
-
-**Breadth First Search/Traversal**
--
-
-**Depth First Search/Traversal**
-
-
 ### Traversal
 
 There are two main types of graph traversal:
