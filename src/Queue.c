@@ -20,7 +20,11 @@
  */
 static Queue initQueue();
 
-// 
+/**
+ * Helper function for QueueEnqueue which allocates memory for a queueNode
+ * and checks for malloc returning NULL
+ * Worst-Case Time Complexity: O(1)
+ */
 static struct queueNode *initQueueNode(Item item);
 
 //-------------------------------Implementation-------------------------------//
@@ -65,7 +69,11 @@ void QueueEnqueue(Queue Q, Item item) {
     return;
 }
 
-
+/**
+ * Helper function for QueueEnqueue which allocates memory for a queueNode
+ * and checks for malloc returning NULL
+ * Worst-Case Time Complexity: O(1)
+ */
 static struct queueNode *initQueueNode(Item item) {
     struct queueNode *newNode = malloc(sizeof(struct queueNode));
     if (newNode == NULL) {
